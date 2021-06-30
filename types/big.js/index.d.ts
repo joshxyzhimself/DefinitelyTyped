@@ -97,6 +97,13 @@ export interface BigConstructor {
      * Default value: 21
      */
     PE: number;
+    /**
+     * When set to true, an error will be thrown if a primitive number is passed to the Big constructor, or if valueOf is called, 
+     * or if toNumber is called on a Big which cannot be converted to a primitive number without a loss of precision.
+     *
+     * Default value: false
+     */
+    strict: boolean;
 
     /** Readonly rounding modes */
 
